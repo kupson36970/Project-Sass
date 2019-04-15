@@ -1,0 +1,66 @@
+=ballMove($name)
+     @keyframes #{$name} 
+        20% 
+            top: 340px
+            left: 605px
+        30% 
+            top: 380px
+            left: 480px
+        60% 
+            top: 80px
+            left: 75px
+            
+
+        88% 
+            top: 0
+            left: 540px
+            
+
+        100% 
+            top: 80px
+            left: 700px
+
+=playerPaddle($name)
+    @keyframes #{$name} 
+        20%
+            top: 200px
+
+        30%
+            top: 260px
+
+        60%
+            top: 40px
+
+        88%
+            top: 70px
+
+        100%
+            top: 90px
+
+=aiPaddle($name)
+    @keyframes #{$name} 
+        20%
+            top: 290px
+
+        30%
+            top: 320px
+
+        60%
+            top: 220px
+
+        88%
+            top: 140px
+
+        100%
+            top: 70px
+
+=showResult($name)
+
+    @keyframes #{$name} 
+        100%
+            transform: scale(1)
+
+=background ($folder:style1, $img:file, $type:jpg, $repeat:no-repeat, $x:0, $y:0)
+    background-image: url(/#{$folder}/#{$img}.#{$type})
+    background-repeat: #{$repeat}
+    background-position: #{$x}px #{$y}px

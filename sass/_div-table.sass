@@ -1,0 +1,73 @@
+*
+      margin: 0
+      padding: 0
+      box-sizing: border-box
+
+body
+     width: 100vw
+     height: 100vh
+     font-family: $myFont
+     +background(img, bck)
+
+.table,
+.ball, 
+.paddle, 
+.result 
+      position: absolute  
+.table
+  width: $tableWidth
+  height: $tableHeight
+  background-color: $tableColor
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  overflow: hidden
+
+.ball
+  width: $ballSize
+  height: $ballSize
+  top: calc(50% - #{$ballSize}/2)
+  left: calc(50% - #{$ballSize}/2)
+  background-color: $ballColor
+  border-radius: 50%
+  animation: ballMove $animationTime linear both
+
+.paddle
+  width: $paddleWidth
+  height: $paddleHeight
+  background-color: $paddleColor
+
+/* rakietka lewa strona
+
+.player
+  top: calc(50% - #{$paddleHeight}/2)
+  left: $paddleFromEdge
+  animation: playerPaddle $animationTime linear both
+  border-radius: 10% 5% 5% 10%
+
+/* prawa strona
+
+.ai
+  top: calc(50% - #{$paddleHeight}/2)
+  right: $paddleFromEdge
+  animation: aiPaddle $animationTime linear both
+  border-radius: 5% 10% 10% 5%
+
+
+.result
+  width: 100%
+  left: 0
+  top: 18%
+  text-transform: uppercase
+  text-align: center
+  font-family: sans-serif
+  font-size: 3rem
+  color: white
+  transform: scale(0)
+  animation: showResult 1s calc(#{$animationTime} + 1s) both
+
++ballMove(ballMove)
++playerPaddle(playerPaddle)
++aiPaddle(aiPaddle)
++showResult(showResult)
