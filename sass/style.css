@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
@@ -41,7 +41,7 @@ body {
   background-color: white;
   border-radius: 50%;
   -webkit-animation: ballMove 5s linear both;
-  animation: ballMove 5s linear both;
+          animation: ballMove 5s linear both;
 }
 
 .paddle {
@@ -55,7 +55,7 @@ body {
   top: calc(50% - 80px/2);
   left: 50px;
   -webkit-animation: playerPaddle 5s linear both;
-  animation: playerPaddle 5s linear both;
+          animation: playerPaddle 5s linear both;
   border-radius: 10% 5% 5% 10%;
 }
 
@@ -64,7 +64,7 @@ body {
   top: calc(50% - 80px/2);
   right: 50px;
   -webkit-animation: aiPaddle 5s linear both;
-  animation: aiPaddle 5s linear both;
+          animation: aiPaddle 5s linear both;
   border-radius: 5% 10% 10% 5%;
 }
 
@@ -78,9 +78,9 @@ body {
   font-size: 3rem;
   color: white;
   -webkit-transform: scale(0);
-  transform: scale(0);
+          transform: scale(0);
   -webkit-animation: showResult 1s calc(5s + 1s) both;
-  animation: showResult 1s calc(5s + 1s) both;
+          animation: showResult 1s calc(5s + 1s) both;
 }
 
 @-webkit-keyframes ballMove {
@@ -88,22 +88,18 @@ body {
     top: 340px;
     left: 605px;
   }
-
   30% {
     top: 380px;
     left: 480px;
   }
-
   60% {
     top: 80px;
     left: 75px;
   }
-
   88% {
     top: 0;
     left: 540px;
   }
-
   100% {
     top: 80px;
     left: 700px;
@@ -115,22 +111,18 @@ body {
     top: 340px;
     left: 605px;
   }
-
   30% {
     top: 380px;
     left: 480px;
   }
-
   60% {
     top: 80px;
     left: 75px;
   }
-
   88% {
     top: 0;
     left: 540px;
   }
-
   100% {
     top: 80px;
     left: 700px;
@@ -141,19 +133,15 @@ body {
   20% {
     top: 200px;
   }
-
   30% {
     top: 260px;
   }
-
   60% {
     top: 40px;
   }
-
   88% {
     top: 70px;
   }
-
   100% {
     top: 90px;
   }
@@ -163,19 +151,15 @@ body {
   20% {
     top: 200px;
   }
-
   30% {
     top: 260px;
   }
-
   60% {
     top: 40px;
   }
-
   88% {
     top: 70px;
   }
-
   100% {
     top: 90px;
   }
@@ -185,19 +169,15 @@ body {
   20% {
     top: 290px;
   }
-
   30% {
     top: 320px;
   }
-
   60% {
     top: 220px;
   }
-
   88% {
     top: 140px;
   }
-
   100% {
     top: 70px;
   }
@@ -207,19 +187,15 @@ body {
   20% {
     top: 290px;
   }
-
   30% {
     top: 320px;
   }
-
   60% {
     top: 220px;
   }
-
   88% {
     top: 140px;
   }
-
   100% {
     top: 70px;
   }
@@ -228,15 +204,14 @@ body {
 @-webkit-keyframes showResult {
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes showResult {
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
 }
-
 /*# sourceMappingURL=style.css.map */
